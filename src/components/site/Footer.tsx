@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Star } from "lucide-react";
 import { business } from "@/config/site";
-import logo from "@/assets/crystal-clear-logo.png.asset.json";
 
 const socials = [
   { icon: Facebook, label: "Facebook", href: business.social.facebook },
@@ -16,7 +15,7 @@ export function Footer() {
         <div>
           <img
             src={logo.url}
-            alt={`${business.name} logo`}
+            src="/favicon.png"
             width={56}
             height={56}
             loading="lazy"
