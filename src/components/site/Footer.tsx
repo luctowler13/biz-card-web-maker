@@ -14,7 +14,6 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 md:grid-cols-3">
         <div>
           <img
-            src={logo.url}
             src="/favicon.png"
             width={56}
             height={56}
