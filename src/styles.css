@@ -63,8 +63,13 @@
 
 :root {
   --radius: 0.625rem;
+  /* CC Window Care brand palette — bright sky blue flyer look */
+  --sky: oklch(0.76 0.14 225);
+  --sky-deep: oklch(0.6 0.17 245);
+  --sky-dark: oklch(0.45 0.13 255);
+  --aqua: oklch(0.85 0.12 195);
   --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --foreground: oklch(0.25 0.05 255);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
