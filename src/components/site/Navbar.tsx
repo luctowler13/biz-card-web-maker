@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { business, nav } from "@/config/site";
-import logo from "@/assets/crystal-clear-logo.png.asset.json";
+
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -22,7 +22,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
         <a href="#home" className="flex items-center gap-3" aria-label={`${business.name} home`}>
-          <img src={logo.url} alt={`${business.name} logo`} width={48} height={48} className="size-10" />
+         <img src="/favicon.png" alt={`${business.name} logo`} width={48} height={48} className="size-10" />
           <span className="font-display text-lg font-extrabold uppercase leading-none tracking-tight text-ink">
             Crystal Clear
             <span className="block text-[0.6rem] font-medium tracking-[0.3em] text-brand">
