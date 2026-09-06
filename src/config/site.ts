@@ -31,8 +31,21 @@ export const nav = [
   { label: "Window Washing", href: "#window-washing" },
   { label: "Pressure Washing", href: "#pressure-washing" },
   { label: "Why Us", href: "#why-us" },
+  { label: "Reviews", href: "#reviews" },
   { label: "Contact", href: "#contact" },
 ];
+
+/**
+ * Google review links — paste your real links here when your
+ * Google Business Profile is live:
+ *  - googleReviewUrl: the "write a review" link for your business
+ *  - googleProfileUrl: your public Google Business Profile page
+ * Until then they point to a Google search for the business.
+ */
+export const googleReviewUrl =
+  "https://www.google.com/search?q=Crystal+Clear+Window+Cleaning+Christchurch+reviews";
+export const googleProfileUrl =
+  "https://www.google.com/search?q=Crystal+Clear+Window+Cleaning+Christchurch";
 
 export const differentiators = [
   {
@@ -97,7 +110,25 @@ export const serviceAreas = [
  * Replace each entry with a genuine Google review once you have them.
  */
 export const reviews = [
-  { name: "Your customer name", rating: 5, text: "Add a genuine Google review here.", service: "Window Washing", placeholder: true },
-  { name: "Your customer name", rating: 5, text: "Add a genuine Google review here.", service: "Pressure Washing", placeholder: true },
-  { name: "Your customer name", rating: 5, text: "Add a genuine Google review here.", service: "Window & Pressure Washing", placeholder: true },
+  {
+    name: "James",
+    rating: 5,
+    text: "Awesome job on our windows. They came up spotless and the whole process was quick and easy. Would definitely recommend Crystal Clear.",
+    service: "Window Washing",
+    placeholder: true, // SAMPLE — replace with a genuine customer review
+  },
+  {
+    name: "Sarah",
+    rating: 5,
+    text: "Really impressed with the result. Professional, friendly and our windows haven't looked this clean in ages.",
+    service: "Window Washing",
+    placeholder: true, // SAMPLE — replace with a genuine customer review
+  },
+  {
+    name: "Matt",
+    rating: 5,
+    text: "Great service and attention to detail. The windows look brand new. Will definitely be using Crystal Clear again.",
+    service: "Window Washing",
+    placeholder: true, // SAMPLE — replace with a genuine customer review
+  },
 ];
