@@ -166,82 +166,54 @@
 
 /* Soap / foam */
 .cc-suds {
-  opacity: 0.9;
+  opacity: 0.75;
+
   background-image:
-    radial-gradient(
-      ellipse at 7% 10%,
-      rgba(255,255,255,0.9) 0 7%,
-      transparent 8%
+    repeating-linear-gradient(
+      4deg,
+      transparent 0px,
+      transparent 16px,
+      rgba(255, 255, 255, 0.65) 17px,
+      rgba(255, 255, 255, 0.35) 21px,
+      transparent 24px,
+      transparent 42px
     ),
-    radial-gradient(
-      ellipse at 76% 20%,
-      rgba(255,255,255,0.8) 0 6%,
-      transparent 7%
-    ),
-    radial-gradient(
-      ellipse at 34% 66%,
-      rgba(255,255,255,0.72) 0 9%,
-      transparent 10%
-    ),
-    radial-gradient(
-      ellipse at 90% 80%,
-      rgba(255,255,255,0.78) 0 7%,
-      transparent 8%
-    ),
-    repeating-radial-gradient(
-      circle at 20% 30%,
-      rgba(255,255,255,0.42) 0 3px,
-      transparent 4px 30px
+    repeating-linear-gradient(
+      -3deg,
+      transparent 0px,
+      transparent 38px,
+      rgba(235, 248, 255, 0.45) 40px,
+      transparent 45px,
+      transparent 70px
     );
 
-  background-size:
-    420px 350px,
-    480px 390px,
-    520px 420px,
-    460px 370px,
-    130px 130px;
+  filter: blur(0.7px);
 }
 
 /* Thin wet streaks + droplets */
 .cc-water-streaks {
-  opacity: 0.78;
+  opacity: 0.6;
 
   background-image:
     repeating-linear-gradient(
-      96deg,
-      transparent 0 7%,
-      rgba(255,255,255,0.34) 7.15% 7.45%,
-      transparent 7.7% 15%
+      92deg,
+      transparent 0px,
+      transparent 35px,
+      rgba(255,255,255,0.30) 37px,
+      transparent 40px,
+      transparent 75px
     ),
-    radial-gradient(
-      circle at 18% 11%,
-      rgba(255,255,255,0.85) 0 3px,
-      transparent 4px
-    ),
-    radial-gradient(
-      circle at 67% 38%,
-      rgba(255,255,255,0.76) 0 5px,
-      transparent 6px
-    ),
-    radial-gradient(
-      circle at 42% 77%,
-      rgba(255,255,255,0.68) 0 4px,
-      transparent 5px
-    ),
-    radial-gradient(
-      circle at 83% 58%,
-      rgba(255,255,255,0.6) 0 2px,
-      transparent 4px
+    repeating-linear-gradient(
+      2deg,
+      transparent 0px,
+      transparent 58px,
+      rgba(210,235,245,0.25) 60px,
+      transparent 64px,
+      transparent 105px
     );
 
-  background-size:
-    100% 100%,
-    95px 125px,
-    155px 190px,
-    125px 165px,
-    115px 150px;
+  filter: blur(0.5px);
 }
-
 /* Complete squeegee */
 .cc-squeegee {
   height: 245px;
