@@ -6,7 +6,6 @@ import { WhySection } from "@/components/site/WhySection";
 import { ServiceSection } from "@/components/site/ServiceSection";
 import { Gallery } from "@/components/site/Gallery";
 import { Reviews } from "@/components/site/Reviews";
-import { ServiceArea } from "@/components/site/ServiceArea";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { MobileCTA } from "@/components/site/MobileCTA";
@@ -95,7 +94,6 @@ function Index() {
           tinted
         />
         <Reviews />
-        <ServiceArea />
         <Contact />
       </main>
       <Footer />
