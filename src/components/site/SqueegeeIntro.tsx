@@ -40,7 +40,7 @@ export function SqueegeeIntro() {
       </div>
 
       {/* Squeegee */}
-      <div className="cc-squeegee absolute left-1/2 top-0 w-[112vw] -translate-x-1/2">
+      <div className="cc-squeegee absolute left-1/2 top-0 w-[94vw] -translate-x-1/2">
         {/* Water/foam edge */}
         <div className="cc-wet-edge absolute inset-x-0 -top-3 h-4" />
 
