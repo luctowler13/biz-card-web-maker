@@ -374,11 +374,11 @@
  */
 @keyframes cc-squeegee-pass {
   from {
-    transform: translate(-50%, -220px);
+    top: -220px;
   }
 
   to {
-    transform: translate(-50%, calc(100vh + 35px));
+    top: calc(100vh + 35px);
   }
 }
 
