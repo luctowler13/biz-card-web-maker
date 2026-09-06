@@ -48,7 +48,7 @@ export function SqueegeeIntro() {
         <div className="cc-rubber-blade absolute inset-x-0 top-0 h-3" />
 
         {/* Metal head */}
-        <div className="cc-squeegee-head absolute left-1/2 top-2 h-9 w-[78vw] max-w-3xl -translate-x-1/2" />
+        <div className="cc-squeegee-head absolute left-1/2 top-2 h-9 w-[90vw] -translate-x-1/2" />
 
         {/* Neck */}
         <div className="cc-squeegee-neck absolute left-1/2 top-9 h-14 w-20 -translate-x-1/2" />
