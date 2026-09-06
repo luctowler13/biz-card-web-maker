@@ -1,5 +1,17 @@
 import { Star } from "lucide-react";
-import { reviews } from "@/config/site";
+import { reviews, googleReviewUrl, googleProfileUrl } from "@/config/site";
+
+function GoogleMark() {
+  return (
+    <span
+      aria-label="Google review"
+      title="Google review"
+      className="flex size-7 items-center justify-center rounded-full bg-background font-display text-sm font-bold shadow-sm ring-1 ring-border"
+    >
+      <span className="text-brand-deep">G</span>
+    </span>
+  );
+}
 
 export function Reviews() {
   return (
@@ -11,33 +23,61 @@ export function Reviews() {
             What our customers say
           </h2>
         </div>
+
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {reviews.map((review, i) => (
             <article
               key={i}
-              className="flex flex-col rounded-2xl border border-dashed border-border bg-ice p-7"
+              className="relative flex flex-col rounded-2xl border border-border bg-card p-7 shadow-sm transition-shadow hover:shadow-lg hover:shadow-brand/10"
             >
-              <div className="flex gap-1 text-brand">
-                {Array.from({ length: review.rating }).map((_, s) => (
-                  <Star key={s} className="size-4 fill-brand" />
-                ))}
+              <div className="flex items-center justify-between">
+                <div className="flex gap-1 text-amber-400">
+                  {Array.from({ length: review.rating }).map((_, s) => (
+                    <Star key={s} className="size-4 fill-amber-400" />
+                  ))}
+                </div>
+                <GoogleMark />
               </div>
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-4 flex-1 leading-relaxed text-muted-foreground">
                 “{review.text}”
               </p>
-              <footer className="mt-5">
-                <p className="font-display font-bold text-ink">{review.name}</p>
-                <p className="text-xs uppercase tracking-wide text-muted-foreground">
-                  {review.service}
-                </p>
+              <footer className="mt-6 flex items-center gap-3 border-t border-border pt-5">
+                <span className="flex size-10 items-center justify-center rounded-full bg-brand font-display text-base font-bold text-primary-foreground">
+                  {review.name.charAt(0)}
+                </span>
+                <div>
+                  <p className="font-display font-bold text-ink">{review.name}</p>
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground">
+                    {review.service}
+                  </p>
+                </div>
               </footer>
               {review.placeholder && (
-                <p className="mt-4 rounded-md bg-background px-3 py-2 text-[11px] font-semibold uppercase tracking-wide text-brand-deep">
-                  Placeholder — replace with a real review
+                <p className="mt-4 rounded-md bg-ice px-3 py-2 text-[11px] font-semibold uppercase tracking-wide text-brand-deep">
+                  Sample review — replace with a genuine Google review
                 </p>
               )}
             </article>
           ))}
+        </div>
+
+        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          <a
+            href={googleReviewUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-8 py-4 text-sm font-bold uppercase tracking-wide text-primary-foreground shadow-lg shadow-brand/25 transition-transform hover:scale-[1.02] sm:w-auto"
+          >
+            Leave us a Google review
+          </a>
+          <a
+            href={googleProfileUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border bg-background px-8 py-4 text-sm font-bold uppercase tracking-wide text-ink transition-colors hover:border-brand hover:text-brand sm:w-auto"
+          >
+            See all Google reviews
+          </a>
         </div>
       </div>
     </section>

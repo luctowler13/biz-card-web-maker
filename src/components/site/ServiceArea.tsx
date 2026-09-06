@@ -14,12 +14,6 @@ export function ServiceArea() {
             Crystal Clear cleans windows and exterior surfaces across {business.serviceArea}.
             Not sure if you're in range? Get in touch — we'll let you know straight away.
           </p>
-          <a
-            href="#quote"
-            className="mt-8 inline-flex rounded-full bg-brand px-7 py-4 text-sm font-bold uppercase tracking-wide text-primary-foreground shadow-lg shadow-brand/25 transition-transform hover:scale-[1.02]"
-          >
-            Check if we service your area
-          </a>
         </div>
         <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3">
           {serviceAreas.map((area) => (
