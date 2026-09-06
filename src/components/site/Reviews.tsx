@@ -52,11 +52,6 @@ export function Reviews() {
                   </p>
                 </div>
               </footer>
-              {review.placeholder && (
-                <p className="mt-4 rounded-md bg-ice px-3 py-2 text-[11px] font-semibold uppercase tracking-wide text-brand-deep">
-                  Sample review — replace with a genuine Google review
-                </p>
-              )}
             </article>
           ))}
         </div>
