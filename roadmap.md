@@ -14,4 +14,6 @@
 - [x] Contact + footer + sticky mobile CTA
 - [x] SEO: titles, meta, LocalBusiness JSON-LD
 - [x] Privacy + Terms pages
+- [x] Replace both before/after pairs with matching-property photos
+- [x] Add a four-step How It Works section with final satisfaction walk-around
 - [ ] Owner to confirm phone/email and add real reviews/suburbs

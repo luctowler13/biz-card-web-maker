@@ -26,53 +26,25 @@ export function QuoteForm() {
   const [photos, setPhotos] = useState<string[]>([]);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-
-  const form = e.currentTarget;
-  const formData = new FormData(form);
-  const data = Object.fromEntries(formData.entries());
-  const parsed = schema.safeParse(data);
-
-  if (!parsed.success) {
-    const next: Errors = {};
-
-    for (const issue of parsed.error.issues) {
-      next[issue.path[0] as keyof Errors] = issue.message;
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(e.currentTarget).entries());
+    const parsed = schema.safeParse(data);
+    if (!parsed.success) {
+      const next: Errors = {};
+      for (const issue of parsed.error.issues) {
+        next[issue.path[0] as keyof Errors] = issue.message;
+      }
+      setErrors(next);
+      return;
     }
-
-    setErrors(next);
-    return;
-  }
-
-  setErrors({});
-  setSending(true);
-
-  try {
-    const response = await fetch("https://formspree.io/f/mnpqbvbk", {
-      method: "POST",
-      body: formData,
-      headers: {
-        Accept: "application/json",
-      },
-    });
-
-    if (!response.ok) {
-      throw new Error("Quote request failed");
-    }
-
-    setSent(true);
-    form.reset();
-    setPhotos([]);
-  } catch (error) {
-    console.error(error);
-    alert(
-      "Sorry, your quote request could not be sent. Please try again or contact us directly."
-    );
-  } finally {
+    setErrors({});
+    setSending(true);
+    // TODO: connect to an email service or backend to deliver quote requests.
+    await new Promise((r) => setTimeout(r, 700));
     setSending(false);
-  }
-};
-  
+    setSent(true);
+  };
+
   if (sent) {
     return (
       <div className="rounded-3xl border border-border bg-background p-10 text-center shadow-xl">

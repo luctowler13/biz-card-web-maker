@@ -5,6 +5,7 @@ import { Hero } from "@/components/site/Hero";
 import { WhySection } from "@/components/site/WhySection";
 import { ServiceSection } from "@/components/site/ServiceSection";
 import { Gallery } from "@/components/site/Gallery";
+import { HowItWorks } from "@/components/site/HowItWorks";
 import { Reviews } from "@/components/site/Reviews";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
@@ -93,6 +94,7 @@ function Index() {
           reverse
           tinted
         />
+        <HowItWorks />
         <Reviews />
         <Contact />
       </main>

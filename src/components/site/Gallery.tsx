@@ -1,7 +1,7 @@
 import { BeforeAfter } from "./BeforeAfter";
-import winBefore from "@/assets/ba-window-before.jpg";
+import winBefore from "@/assets/ba-window-matching-before.jpg";
 import winAfter from "@/assets/ba-window-after.jpg";
-import driveBefore from "@/assets/ba-drive-before.jpg";
+import driveBefore from "@/assets/ba-drive-matching-before.jpg";
 import driveAfter from "@/assets/ba-drive-after.jpg";
 
 /** Swap these for your own job photos — add as many pairs as you like. */

@@ -43,9 +43,9 @@ export const nav = [
  * Until then they point to a Google search for the business.
  */
 export const googleReviewUrl =
-  "https://g.page/r/CdkYtsRgxMo1EAI/review";
+  "https://www.google.com/search?q=Crystal+Clear+Window+Cleaning+Christchurch+reviews";
 export const googleProfileUrl =
-  "https://share.google/sAqyPtMiXXBhDpQKo";
+  "https://www.google.com/search?q=Crystal+Clear+Window+Cleaning+Christchurch";
 
 export const differentiators = [
   {
