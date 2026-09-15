@@ -5,12 +5,14 @@ import { useEffect, useState } from "react";
  * Reduced-motion visitors see the site immediately.
  */
 export function SqueegeeIntro() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
   useEffect(() => {
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced) return;
-    setShow(true);
+    if (reduced) {
+      setShow(false);
+      return;
+    }
     const t = window.setTimeout(() => setShow(false), 2900);
     return () => window.clearTimeout(t);
   }, []);
