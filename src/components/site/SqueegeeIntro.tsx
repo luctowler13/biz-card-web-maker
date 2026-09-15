@@ -23,6 +23,9 @@ export function SqueegeeIntro() {
     <div
       aria-hidden="true"
       className="cc-clean-intro pointer-events-none fixed inset-0 z-[100] overflow-hidden"
+      onAnimationEnd={(event) => {
+        if (event.animationName === "cc-intro-finish") setShow(false);
+      }}
     >
       <div className="cc-wet-pane absolute inset-0">
         <div className="cc-suds absolute inset-0" />
