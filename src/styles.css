@@ -191,8 +191,8 @@
 }
 
 @keyframes cc-squeegee-pass {
-  from { transform: translate(-50%, -210px); }
-  to { transform: translate(-50%, calc(100vh + 18px)); }
+  from { transform: translateY(-210px); }
+  to { transform: translateY(calc(100vh + 18px)); }
 }
 
 @keyframes cc-edge-drip {
