@@ -77,7 +77,7 @@ function Index() {
           body="We provide professional window cleaning for homes and businesses, removing dirt, grime, water marks and buildup to leave glass looking clear and polished — inside and out, frames and sills included."
           items={windowWashing}
           cta="Get a window cleaning quote"
-          image={windowImg.url}
+          image={windowImg}
           imageAlt="Window-cleaning squeegee clearing soap from glass against a blue sky"
         />
         <Gallery />
