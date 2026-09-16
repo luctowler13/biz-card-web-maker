@@ -32,7 +32,7 @@ export function SqueegeeIntro() {
         <div className="cc-water-streaks absolute inset-0" />
       </div>
 
-      <div className="cc-squeegee absolute left-1/2 top-0 w-[112vw] -translate-x-1/2">
+      <div className="cc-squeegee absolute inset-x-0 top-0 w-full">
         <div className="cc-wet-edge absolute inset-x-0 -top-3 h-4" />
         <div className="cc-rubber-blade absolute inset-x-0 top-0 h-3" />
         <div className="cc-squeegee-head absolute left-1/2 top-2 h-9 w-[78vw] max-w-3xl -translate-x-1/2" />
