@@ -11,7 +11,7 @@ import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { MobileCTA } from "@/components/site/MobileCTA";
 import { business, pressureWashing, windowWashing } from "@/config/site";
-import windowImg from "@/assets/window-squeegee-soapy-glass.png.asset.json";
+import windowImg from "@/assets/window-squeegee-soapy-glass.jpg";
 import pressureImg from "@/assets/pressure-washing.jpg";
 
 const localBusinessJsonLd = {
