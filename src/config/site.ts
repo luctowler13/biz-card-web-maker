@@ -1,11 +1,11 @@
 /**
- * Crystal Clear — single place to edit business details, services,
+ * Diamond Clear — single place to edit business details, services,
  * reviews and service areas. Everything on the website reads from here.
  */
 
 export const business = {
-  name: "Crystal Clear",
-  legalName: "Crystal Clear Window Cleaning",
+  name: "Diamond Clear",
+  legalName: "Diamond Clear Property Care",
   tagline: "Window Washing & Exterior Cleaning",
   domain: "crystalclearnz.com",
   url: "https://crystalclearnz.com",
@@ -109,7 +109,7 @@ export const reviews = [
   {
     name: "James",
     rating: 5,
-    text: "Awesome job on our windows. They came up spotless and the whole process was quick and easy. Would definitely recommend Crystal Clear.",
+    text: "Awesome job on our windows. They came up spotless and the whole process was quick and easy. Would definitely recommend Diamond Clear.",
     service: "Window Washing",
     placeholder: true, // SAMPLE — replace with a genuine customer review
   },
@@ -123,7 +123,7 @@ export const reviews = [
   {
     name: "Matt",
     rating: 5,
-    text: "Great service and attention to detail. The windows look brand new. Will definitely be using Crystal Clear again.",
+    text: "Great service and attention to detail. The windows look brand new. Will definitely be using Diamond Clear again.",
     service: "Window Washing",
     placeholder: true, // SAMPLE — replace with a genuine customer review
   },

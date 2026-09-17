@@ -4,16 +4,16 @@ import { business } from "@/config/site";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "Terms of Service | Crystal Clear Window Cleaning Christchurch" },
+      { title: "Terms of Service | Diamond Clear Property Care" },
       {
         name: "description",
         content:
-          "The terms that apply to window washing and pressure washing services provided by Crystal Clear in Christchurch.",
+          "The terms that apply to window washing and pressure washing services provided by Diamond Clear Property Care in Christchurch.",
       },
-      { property: "og:title", content: "Terms of Service | Crystal Clear" },
+      { property: "og:title", content: "Terms of Service | Diamond Clear" },
       {
         property: "og:description",
-        content: "Terms covering quotes, bookings and cleaning work by Crystal Clear.",
+        content: "Terms covering quotes, bookings and cleaning work by Diamond Clear.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },

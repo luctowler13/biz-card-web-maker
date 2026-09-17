@@ -10,7 +10,7 @@ export function WhySection() {
         <div className="max-w-2xl">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-brand">Why us</p>
           <h2 className="mt-4 font-display text-3xl font-extrabold uppercase leading-tight text-ink sm:text-5xl">
-            What sets Crystal Clear apart
+            What sets Diamond Clear apart
           </h2>
         </div>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

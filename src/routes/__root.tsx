@@ -77,15 +77,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Crystal Clear | Window & Pressure Washing Christchurch" },
+      { title: "Diamond Clear | Window & Pressure Washing Christchurch" },
       {
         name: "description",
         content:
           "Professional window washing and exterior pressure washing across Christchurch and surrounding areas.",
       },
-      { name: "author", content: "Crystal Clear" },
+      { name: "author", content: "Diamond Clear Property Care" },
       { name: "theme-color", content: "#3fa4f2" },
-      { property: "og:site_name", content: "Crystal Clear" },
+      { property: "og:site_name", content: "Diamond Clear Property Care" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

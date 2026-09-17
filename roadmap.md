@@ -1,11 +1,11 @@
-# Crystal Clear website — roadmap
+# Diamond Clear Property Care website — roadmap
 
 - [x] Brand palette + typography from logo/flyer
 - [x] Logo asset + favicon
 - [x] Wet-window squeegee reveal intro (reduced-motion + mobile safe)
 - [x] Sticky nav + mobile menu + Book a Quote
 - [x] Hero
-- [x] What sets Crystal Clear apart
+- [x] What sets Diamond Clear apart
 - [x] Window washing section
 - [x] Pressure washing section
 - [x] Before/after slider gallery
@@ -19,3 +19,4 @@
 - [ ] Owner to confirm phone/email and add real reviews/suburbs
 - [ ] Quote form: email submissions to ccwindows0@gmail.com via Resend
 - [x] Point Google review buttons and footer link at real profile/review URLs
+- [x] Rebrand customer-facing copy and logo to Diamond Clear Property Care

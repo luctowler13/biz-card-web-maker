@@ -24,7 +24,7 @@ export function Navbar() {
         <a href="#home" className="flex items-center gap-3" aria-label={`${business.name} home`}>
          <img src="/favicon.png" alt={`${business.name} logo`} width={64} height={64} className="size-14 shrink-0" />
           <span className="font-display text-lg font-extrabold uppercase leading-none tracking-tight text-ink">
-            Crystal Clear
+            Diamond Clear
             <span className="block text-[0.6rem] font-medium tracking-[0.3em] text-brand">
               WINDOW CLEANING
             </span>
@@ -52,7 +52,7 @@ export function Navbar() {
         <div className="flex items-center gap-2 lg:hidden">
           <a
             href={business.phoneHref}
-            aria-label="Call Crystal Clear"
+            aria-label="Call Diamond Clear"
             className="flex size-11 items-center justify-center rounded-full border border-border text-brand"
           >
             <Phone className="size-5" />
