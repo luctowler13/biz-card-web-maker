@@ -22,7 +22,7 @@ export const business = {
   social: {
     facebook: "",
     instagram: "",
-    google: "",
+    google: "https://share.google/0p38tLeFQ5FSvevNq",
   },
 };
 
