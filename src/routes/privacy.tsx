@@ -4,16 +4,16 @@ import { business } from "@/config/site";
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy | Crystal Clear Window Cleaning Christchurch" },
+      { title: "Privacy Policy | Diamond Clear Property Care" },
       {
         name: "description",
         content:
-          "How Crystal Clear collects, uses and protects the details you share when requesting a window or pressure washing quote.",
+          "How Diamond Clear Property Care collects, uses and protects the details you share when requesting a window or pressure washing quote.",
       },
-      { property: "og:title", content: "Privacy Policy | Crystal Clear" },
+      { property: "og:title", content: "Privacy Policy | Diamond Clear" },
       {
         property: "og:description",
-        content: "How Crystal Clear handles your personal information.",
+        content: "How Diamond Clear handles your personal information.",
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },

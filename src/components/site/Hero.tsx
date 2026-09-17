@@ -15,8 +15,8 @@ export function Hero() {
             <Star className="size-3.5 fill-brand" /> {business.serviceArea}
           </p>
           <h1 className="mt-6 font-display text-4xl font-extrabold uppercase leading-[1.02] text-ink sm:text-6xl lg:text-7xl">
-            Crystal clear results.
-            <span className="block text-brand">Every time.</span>
+            A diamond standard
+            <span className="block text-brand">of clean.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
             Professional window washing and exterior cleaning that leaves your property

@@ -36,17 +36,17 @@ const localBusinessJsonLd = {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Window Cleaning Christchurch | Crystal Clear Window Washing" },
+      { title: "Window Cleaning Christchurch | Diamond Clear" },
       {
         name: "description",
         content:
           "Professional window washing and pressure washing in Christchurch. Residential and commercial exterior cleaning with free, no-obligation quotes.",
       },
-      { property: "og:title", content: "Crystal Clear — Window & Pressure Washing Christchurch" },
+      { property: "og:title", content: "Diamond Clear — Window & Pressure Washing Christchurch" },
       {
         property: "og:description",
         content:
-          "Crystal clear results, every time. Window washing and exterior pressure washing across Christchurch and surrounding areas.",
+          "A diamond standard of clean. Window washing and exterior pressure washing across Christchurch and surrounding areas.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -73,7 +73,7 @@ function Index() {
           id="window-washing"
           eyebrow="Service"
           title="Window Washing"
-          headline="See the difference Crystal Clear makes."
+          headline="See the difference Diamond Clear makes."
           body="We provide professional window cleaning for homes and businesses, removing dirt, grime, water marks and buildup to leave glass looking clear and polished — inside and out, frames and sills included."
           items={windowWashing}
           cta="Get a window cleaning quote"
@@ -86,7 +86,7 @@ function Index() {
           eyebrow="Service"
           title="Pressure Washing"
           headline="Bring your exterior surfaces back to life."
-          body="Crystal Clear provides professional exterior pressure washing to lift built-up dirt, grime and organic buildup from suitable outdoor surfaces, restoring the look of your property."
+          body="Diamond Clear provides professional exterior pressure washing to lift built-up dirt, grime and organic buildup from suitable outdoor surfaces, restoring the look of your property."
           items={pressureWashing}
           cta="Get a pressure washing quote"
           image={pressureImg}
