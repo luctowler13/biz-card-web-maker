@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { z } from "zod";
 import { CheckCircle2, ImagePlus, Loader2 } from "lucide-react";
-
+import { sendQuoteEmail } from "../../lib/quote-email";
 const schema = z.object({
   name: z.string().trim().min(2, "Please enter your full name").max(100),
   phone: z.string().trim().min(6, "Please enter a contact phone number").max(30),
@@ -24,6 +24,7 @@ export function QuoteForm() {
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
   const [photos, setPhotos] = useState<string[]>([]);
+  const [sendError, setSendError] = useState("");
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -38,11 +39,20 @@ export function QuoteForm() {
       return;
     }
     setErrors({});
-    setSending(true);
-    // TODO: connect to an email service or backend to deliver quote requests.
-    await new Promise((r) => setTimeout(r, 700));
-    setSending(false);
-    setSent(true);
+setSendError("");
+setSending(true);
+
+try {
+  await sendQuoteEmail({ data: parsed.data });
+  setSent(true);
+} catch (error) {
+  console.error("Quote request failed:", error);
+  setSendError(
+    "Sorry, we couldn't send your request. Please try again or contact us directly."
+  );
+} finally {
+  setSending(false);
+}
   };
 
   if (sent) {
@@ -144,6 +154,11 @@ export function QuoteForm() {
         {sending && <Loader2 className="size-4 animate-spin" />}
         Get my free quote
       </button>
+      {sendError && (
+  <p className="mt-3 text-center text-sm text-destructive">
+    {sendError}
+  </p>
+)}
       <p className="mt-3 text-center text-xs text-muted-foreground">
         Free quotes, no obligation.
       </p>
