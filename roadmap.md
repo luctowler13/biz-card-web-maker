@@ -18,3 +18,4 @@
 - [x] Add a four-step How It Works section with final satisfaction walk-around
 - [ ] Owner to confirm phone/email and add real reviews/suburbs
 - [ ] Quote form: email submissions to ccwindows0@gmail.com via Resend
+- [x] Point Google review buttons and footer link at real profile/review URLs
