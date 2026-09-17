@@ -36,16 +36,12 @@ export const nav = [
 ];
 
 /**
- * Google review links — paste your real links here when your
- * Google Business Profile is live:
- *  - googleReviewUrl: the "write a review" link for your business
- *  - googleProfileUrl: your public Google Business Profile page
- * Until then they point to a Google search for the business.
+ * Google review links — edit here to change where the review buttons go:
+ *  - googleReviewUrl: the "Leave Us a Google Review" link
+ *  - googleProfileUrl: the "See All Google Reviews" link (your profile)
  */
-export const googleReviewUrl =
-  "https://www.google.com/search?q=Crystal+Clear+Window+Cleaning+Christchurch+reviews";
-export const googleProfileUrl =
-  "https://www.google.com/search?q=Crystal+Clear+Window+Cleaning+Christchurch";
+export const googleReviewUrl = "https://g.page/r/CdkYtsRgxMo1EAI/review";
+export const googleProfileUrl = "https://share.google/0p38tLeFQ5FSvevNq";
 
 export const differentiators = [
   {
