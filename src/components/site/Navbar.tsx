@@ -26,7 +26,7 @@ export function Navbar() {
           <span className="font-display text-lg font-extrabold uppercase leading-none tracking-tight text-ink">
             Diamond Clear
             <span className="block text-[0.6rem] font-medium tracking-[0.3em] text-brand">
-              WINDOW CLEANING
+              PROPERTY CARE
             </span>
           </span>
         </a>

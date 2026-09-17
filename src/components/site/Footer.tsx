@@ -20,7 +20,7 @@ export function Footer() {
             loading="lazy"
             className="size-14"
           />
-          <p className="mt-4 font-display text-xl font-extrabold uppercase text-white">Diamond Clear</p>
+          <p className="mt-4 font-display text-xl font-extrabold uppercase text-white">Diamond Clear Property Care</p>
           <p className="mt-1 text-sm">Window washing &amp; exterior cleaning, {business.serviceArea}.</p>
           <a href={business.url} className="mt-3 inline-block text-sm font-semibold text-brand">
             {business.domain}
