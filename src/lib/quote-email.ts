@@ -15,7 +15,7 @@ const quoteSchema = z.object({
 export const sendQuoteEmail = createServerFn({ method: "POST" })
   .inputValidator((data: unknown) => quoteSchema.parse(data))
   .handler(async ({ data }) => {
-    const apiKey = process.env.RESEND_API_KEY;
+    const apiKey = process.env["RESEND_API_KEY"];
 
     if (!apiKey) {
       console.error("RESEND_API_KEY is not configured");
