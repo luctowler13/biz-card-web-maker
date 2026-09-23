@@ -30,7 +30,7 @@ export const sendQuoteEmail = createServerFn({ method: "POST" })
       },
       body: JSON.stringify({
         from: "Crystal Clear Quotes <quotes@crystalclearnz.com>",
-        to: ["ccwindows0@gmail.com"],
+        to: ["diamondclearnz@gmail.com"],
         reply_to: data.email,
         subject: `New quote request — ${data.service} — ${data.name}`,
         text: [
