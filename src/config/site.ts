@@ -8,7 +8,7 @@ export const business = {
   legalName: "Diamond Clear Property Care",
   tagline: "Window Washing & Exterior Cleaning",
   domain: "https://www.diamondclearnz.online",
-  url: "https://www.diamondclearnz.online",
+  url: "diamondclearnz.online",
   /** Replace with your final contact details. */
   phone: "022 327 6265",
   phoneHref: "tel:+64223276265",
