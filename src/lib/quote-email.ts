@@ -29,7 +29,7 @@ export const sendQuoteEmail = createServerFn({ method: "POST" })
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-       from: "Diamond Clear Quotes <quotes@diamondclearnz.online>",
+    from: "Diamond Clear Quotes <quotes@diamondclearnz.online>",
 to: ["diamondclearnz@gmail.com"],
         reply_to: data.email,
         subject: `New quote request — ${data.service} — ${data.name}`,
